@@ -7,7 +7,11 @@ Due to the file size limit of GitHub, the pretrained model is provided in a Drop
 # To test with this pretrained model
 Clone the model provided by Jun-Yan Zhu.<br>
 Clone the sample dataset and the pretrained model on this page and put them in corresponding directories.<br>
+Activate visdom server with:<br>
+```bash
+python -m visdom.server
+```
 Then generate the results using<br>
 ```bash
-python test.py --dataroot ./datasets/architect_shader/ --direction BtoA --model pix2pix --name architect_shader
+python test.py --dataroot ./datasets/architect_shader_sample/ --direction AtoB --model pix2pix --name architect_shader
 ```
